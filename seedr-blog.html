@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seedr Blog (Mini)</title>
+  <meta name="description" content="A small HTML blog page about Seedr." />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #111a2e;
+      --text: #e8eefc;
+      --muted: #b8c4e6;
+      --link: #7cb7ff;
+      --border: rgba(255,255,255,.12);
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1000px 600px at 10% 10%, #1a2a55 0%, var(--bg) 45%),
+                  radial-gradient(900px 500px at 90% 0%, #2a1b5a 0%, var(--bg) 50%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 40px 18px; }
+    header, article, footer {
+      background: rgba(17, 26, 46, 0.82);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 20px;
+      backdrop-filter: blur(8px);
+    }
+    header { margin-bottom: 18px; }
+    h1 { margin: 0 0 6px; font-size: 1.8rem; }
+    .meta { color: var(--muted); font-size: 0.95rem; }
+    a { color: var(--link); }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: rgba(124, 183, 255, 0.15);
+      border: 1px solid rgba(124, 183, 255, 0.35);
+      text-decoration: none;
+    }
+    ul { margin: 10px 0 0 20px; }
+    footer { margin-top: 18px; color: var(--muted); font-size: 0.95rem; }
+    code.inline {
+      background: rgba(255,255,255,.08);
+      padding: 2px 6px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Seedr: A Tiny Cloud Companion for Torrent Downloads</h1>
+      <div class="meta">Date: 2026-02-26 • Author: MuhammadAhhadQumar</div>
+      <a class="btn" href="https://www.seedr.cc/" target="_blank" rel="noopener noreferrer">
+        Visit Seedr (Official Site)
+      </a>
+    </header>
+
+    <article>
+      <p>
+        Seedr is a cloud-based service that can fetch torrent content for you and make it available online.
+        Instead of keeping a torrent client running locally, you can add a magnet link or torrent file,
+        let Seedr download it in the cloud, and then stream or download the resulting files.
+      </p>
+
+      <h2>Why people use Seedr</h2>
+      <ul>
+        <li><strong>Convenience:</strong> no long-running local torrent app required.</li>
+        <li><strong>Access anywhere:</strong> your files are available from a browser.</li>
+        <li><strong>Preview-friendly:</strong> stream media to check it before downloading.</li>
+        <li><strong>Cleaner devices:</strong> less disk churn and background activity on your computer.</li>
+      </ul>
+
+      <h2>Quick note</h2>
+      <p>
+        Always respect copyright and your local laws. Use services like Seedr responsibly and only for content
+        you have the right to download and share.
+      </p>
+
+      <p>
+        Official link: <a href="https://www.seedr.cc/" target="_blank" rel="noopener noreferrer">https://www.seedr.cc/</a>
+        (<span class="meta">active link</span>)
+      </p>
+
+      <p class="meta">
+        Tip: Save this file as <code class="inline">seedr-blog.html</code> and open it in your browser.
+      </p>
+    </article>
+
+    <footer>
+      <div>© 2026 • Mini blog page about Seedr</div>
+    </footer>
+  </div>
+</body>
+</html>
