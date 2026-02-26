@@ -51,6 +51,110 @@
       border-radius: 8px;
       border: 1px solid var(--border);
     }
+
+    /* ---- Enhancements (added) ---- */
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    header, article, footer {
+      box-shadow:
+        0 10px 30px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.04);
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+
+    header:hover, article:hover, footer:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,.18);
+      box-shadow:
+        0 14px 40px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.05);
+    }
+
+    .wrap {
+      padding: 46px 18px;
+    }
+
+    h1 {
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    h2 {
+      margin: 18px 0 8px;
+      font-size: 1.2rem;
+      letter-spacing: -0.01em;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      height: 1px;
+      margin-top: 10px;
+      background: linear-gradient(90deg, rgba(124,183,255,.55), transparent);
+    }
+
+    article p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid rgba(124,183,255,.35);
+      transition: color .15s ease, border-color .15s ease, opacity .15s ease;
+    }
+
+    a:hover {
+      color: #a8d2ff;
+      border-bottom-color: rgba(168,210,255,.75);
+    }
+
+    .btn {
+      font-weight: 600;
+      border-bottom: none;
+      box-shadow: 0 8px 18px rgba(0,0,0,.25);
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      background: rgba(124, 183, 255, 0.22);
+      border-color: rgba(124, 183, 255, 0.55);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    code.inline {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    :focus-visible {
+      outline: 2px solid rgba(124,183,255,.9);
+      outline-offset: 3px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 520px) {
+      .wrap { padding: 26px 14px; }
+      header, article, footer { padding: 18px 16px; border-radius: 14px; }
+      h1 { font-size: 1.45rem; }
+      .meta { font-size: 0.9rem; }
+      .btn { width: 100%; text-align: center; }
+    }
   </style>
 </head>
 
