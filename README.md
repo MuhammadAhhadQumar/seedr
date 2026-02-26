@@ -1,0 +1,2 @@
+# seedr
+about seedr.cc
